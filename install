@@ -8,7 +8,6 @@ apt install root-repo -y
 apt install x11-repo -y
 apt install termux-api -y
 pkg install science-repo -y
-apt install git -y
 apt install wget -y
 aot install curl -y
 apt install fish -y
