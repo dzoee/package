@@ -2,17 +2,17 @@
 termux-setup-storage
 apt update -y
 apt upgrade -y
-apt dist-upgrade -y
-pkg install game-repo -y
-apt install root-repo -y
-apt install x11-repo -y
-apt install termux-api -y
-pkg install science-repo -y
-apt install wget -y
-aot install curl -y
-apt install fish -y
+pkg install -f game-repo -y
+apt install -f root-repo -y
+apt install -f x11-repo -y
+apt install -f termux-api -y
+pkg install -f science-repo -y
+apt install -f wget -y
+aot install -f curl -y
+apt install -f fish -y
 curl -LO https://its-pointless.github.io/setup-pointless-repo.sh
+mv setup-pointless-repo.sh /..
 bash setup-pointless-repo.sh
 pkg autoclean
 pkg clean
-termux-change-repo
+pkg clear
